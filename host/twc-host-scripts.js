@@ -31,7 +31,7 @@ chatButtonOpen.addEventListener('click', function() {
     // send a message to the iframe that the chat window should be maximized
     iframeWindow.postMessage(["call", "maximize"], "*"); // wildcard should be replaced with host url
 
-    // add class to iframe maximize it's size
+    // add class to iframe to maximize it's size
     // this is not needed strictly because the child page will send a message to add this class as well
     // but adding it directly makes the iframe reach it's full size before the chat window fades in
     iframe.classList.add("twc-chat-window");
