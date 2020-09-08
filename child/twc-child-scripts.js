@@ -1,5 +1,4 @@
 function maximize() {
-  console.log("Child maximize function. Adding class");
   // tell the host to add a class to the iframe to give it the correct height
   window.parent.postMessage(["addClass", "twc-chat-window"], "*"); // wildcard should be replaced with host url/origin
 
@@ -17,14 +16,12 @@ function maximize() {
     // it seems some events regarding keyboard visibility is sometimes not received when running in iframe
     // chatch keyboard dismissed
     inputField.addEventListener('blur', function (event) {
-      console.log("keyboard blur")
       chatWindow.classList.remove("ios-keyboard-shown");
       chatWindow.classList.add("ios-keyboard-hidden");
     });
   
     // catch keyboard should be shown
     inputField.addEventListener('focus', function (event) {   
-      console.log("keyboard focus")
       chatWindow.classList.add("ios-keyboard-shown");
       chatWindow.classList.remove("ios-keyboard-hidden");
     });
@@ -32,7 +29,6 @@ function maximize() {
     // sometimes iOS does not fire the focus event properly
     // so we also check for the click event 
     inputField.addEventListener('click', function (event) {   
-      console.log("inputfield click")
       chatWindow.classList.add("ios-keyboard-shown");
       chatWindow.classList.remove("ios-keyboard-hidden");
     });
@@ -62,9 +58,7 @@ TeneoWebChat.on('visibility_changed', onVisibilityChanged)
 window.addEventListener('message', function (e) {
   var eventName = e.data[0];
   var method = e.data[1];
-  var payload = e.data[2];
   var origin = e.origin; // origin should be checked for security
-  console.log('message received', eventName, method, payload)
   switch (eventName) {
       case 'call':
         switch (method) {
@@ -73,10 +67,6 @@ window.addEventListener('message', function (e) {
             break;
           case 'minimize':
             TeneoWebChat.call('minimize');
-            break;
-          case 'send_input':
-            var messagePayload = {'text':payload}
-            TeneoWebChat.call('send_input', messagePayload);
             break;
         }
         break;

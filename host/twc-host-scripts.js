@@ -7,7 +7,6 @@ window.addEventListener('message', function (e) {
     var eventName = e.data[0];
     var data = e.data[1];
     var origin = e.origin; // origin should be checked for security
-    console.log("Host received message", eventName, data)
     switch (eventName) {
         case 'addClass':
             iframe.classList.add(data);
@@ -43,11 +42,4 @@ var chatButtonClose = document.getElementById('chat-btn-close');
 chatButtonClose.addEventListener('click', function() {
     // send a message to the iframe that the chat window should be minimized
     iframeWindow.postMessage(["call", "minimize"], "*"); // wildcard should be replaced with host url
-});
-
-// button that sends 'Hello' input to teneo web chat
-var chatButtonSendInput = document.getElementById('chat-btn-send-input');
-chatButtonSendInput.addEventListener('click', function() {
-    console.log('Send input button clicked')
-    iframeWindow.postMessage(["call", "send_input", "Hello"], "*"); // wildcard should be replaced with host url
 });
