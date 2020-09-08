@@ -5,7 +5,7 @@ This repository focuses on developers and requires a basic knowledge of web tech
 
 ## Prerequisites and limitations
 ### Teneo Web Chat version
-This requires Teneo Web Chat 3.1.0 or higher. You will need to add the latest version of `teneo-web-chat.js` to the 'child' folder manually. You can download the latest version here: [https://github.com/artificialsolutions/teneo-web-chat/releases](https://github.com/artificialsolutions/teneo-web-chat/releases).
+This setup requires Teneo Web Chat 3.1.0 or higher. You will need to add the latest version of `teneo-web-chat.js` to the 'child' folder manually. You can download the latest version here: [https://github.com/artificialsolutions/teneo-web-chat/releases](https://github.com/artificialsolutions/teneo-web-chat/releases).
 
 ### Access to websites
 To embed Teneo Web Chat in your site, you will need to be able to upload files to your websites and embed code into the website's html.
