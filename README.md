@@ -5,7 +5,7 @@ This repository focuses on developers and requires a basic knowledge of web tech
 
 ## Prerequisites and limitations
 ### Teneo Web Chat version
-This setup requires Teneo Web Chat 3.1.0 or higher. You will need to add the latest version of `teneo-web-chat.js` to the 'child' folder manually. You can download the latest version here: [https://github.com/artificialsolutions/teneo-web-chat/releases](https://github.com/artificialsolutions/teneo-web-chat/releases).
+This setup requires Teneo Web Chat 3.1.0 or higher. You can download the latest version here: [https://github.com/artificialsolutions/teneo-web-chat/releases](https://github.com/artificialsolutions/teneo-web-chat/releases). You will need to add the latest version of `teneo-web-chat.js` to the 'child' folder manually.
 
 ### Access to websites
 To embed Teneo Web Chat in your site, you will need to be able to upload files to your websites and embed code into the website's html.
@@ -14,9 +14,11 @@ To embed Teneo Web Chat in your site, you will need to be able to upload files t
 Embedding Teneo Web Chat with support for cross-domain browsing is supported in all major browsers (Chrome, Firefox, Edge and IE11) except Safari when 'Prevent cross-site tracking' is enabled. It's also not supported in Chrome and Firefox on iOS. 
 
 ## How it works
-To support cross-domain browsing, a page that contains the Teneo Web Chat UI is loaded in an iFrame. This iFrame is embedded your websites. This means that you need a place to host the page containing the Teneo Web Chat UI so you can load it into the iFrame(s).
+To support cross-domain browsing, a page that contains the Teneo Web Chat UI is loaded in an iFrame. This iFrame is embedded in your websites. This means that you need a place to host the page containing the Teneo Web Chat UI so you can load it into the iFrame(s).
 
 ![Teneo Web Chat loaded in iFrame](host_child.png)
+
+When implemented like this, Teneo Web Chat stores the chat history in the localStorage of Domain X. This allows it to show the same chat history on multiple domains.
 
 To transfer information from the websites to Teneo Web Chat and vice versa, the JavaScript [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) API is used. For example, when the user clicks the launch button (which is part of the page shown inside the iFrame), a postMessage is sent from the page inside the iFrame to the parent to inform the parent that the iFrame size should be updated.
 
