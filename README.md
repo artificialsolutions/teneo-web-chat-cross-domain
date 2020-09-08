@@ -1,4 +1,4 @@
-# Tenoe Web Chat cross-domain example
+# Teneo Web Chat cross-domain example
 This repository contains example scripts that can be used to use Teneo Web Chat in a way that supports cross-domain browsing. This means users can start a conversation on website hosted on domain A, move to a website hosted on domain B and continue the conversation.
 
 ## Prerequisites and limitations
