@@ -24,7 +24,7 @@ To transfer information from the websites to Teneo Web Chat and vice versa, the 
 This repository contains a 'host' and a 'child' folder.
 
 ### Host folder
-The 'host' folder contains example code that needs to be added to the webpages on which Teneo Web Chat should be shown (the webpages in Domain A and Domain B in the image above).
+The 'host' folder contains example code that needs to be added to the webpages on which Teneo Web Chat should be shown (the webpages at Domain A and Domain B in the image above).
 
 #### index.html
 Example page that demonstrates how the iFrame should be added to pages that should display Teneo Web Chat. The page also contains example buttons to demonstrate how to trigger events inside the iFrame from the host page.
@@ -36,7 +36,7 @@ Contains styles to properly change the style and size of the iFrame, depending o
 Script that receives postMessages from Teneo Web Chat when the chat window is maximized/minimized. Also contains code to demonstrate how postMessage can be send to the child page to tell it to maximize/minimize the chat window.
 
 ### Child folder
-The 'child' folder contains the Teneo Web Chat UI and should be hosted on a domain that can be loaded inside the iFrame.
+The 'child' folder contains the Teneo Web Chat UI and should be hosted on a domain that can be loaded inside the iFrame (the page at Domain X in the image above).
 
 #### index.html
 Webpage that embeds the Teneo Web Chat UI. Please note:
