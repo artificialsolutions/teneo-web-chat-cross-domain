@@ -11,7 +11,7 @@ Embedding Teneo Web Chat with support for cross-domain browsing is supported in 
 # How does it work
 To support cross-domain browsing, a page that contains the Teneo Web Chat UI is loaded in an iFrame. This iFrame is embedded your websites (which may use different domains).
 
-![Teneo Web Chat is loaded in an iFrame](host_child.png)
+![Teneo Web Chat is loaded in an iFrame](host_child.png | width=50%)
 
 In this repository, the 'child' folder contains the page, scripts and stylesheets that are used to display the the Teneo Web Chat UI in the iFrame.
 
