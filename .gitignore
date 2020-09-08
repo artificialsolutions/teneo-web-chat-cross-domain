@@ -8,3 +8,5 @@ stats-prod.json
 !dist/index.html
 env.env
 .env
+
+teneo-web-chat.js
