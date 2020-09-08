@@ -2,10 +2,6 @@ body {
     background: transparent;
 }
 
-.ios-keyboard-shown {
-    height: calc(66% - 80px) !important;
-}
-
 @media screen and (min-width: 370px) and (max-width:370px) {
     .twc-chat-window {
         box-sizing: border-box !important;
