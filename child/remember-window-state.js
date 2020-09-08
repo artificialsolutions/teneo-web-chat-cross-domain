@@ -1,5 +1,5 @@
 function rememberVisibilityState(payload) {
-  localStorage.setItem('twc_last_state', payload.visibility); // when running in 
+  localStorage.setItem('twc_last_state', payload.visibility);
 }
 
 function restoreWindowState() {
