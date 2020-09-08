@@ -1,0 +1,30 @@
+#twc-iframe {
+    height: 115px;
+    width: 115px;
+    border: none;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+.twc-chat-window {
+    width: 370px !important;
+    height: calc(100% - 120px) !important;
+    max-height: 590px;
+    min-height: 250px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15) !important;
+}
+
+@media (max-width: 450px) {
+    .twc-chat-window {
+        width: 100% !important;
+        height: 100% !important;;
+        max-height: 100%;
+        right: 0px;
+        bottom: 0px;
+        border-radius: 0px;
+        margin: 0 !important;
+    }
+}
