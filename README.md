@@ -18,8 +18,6 @@ To support cross-domain browsing, a page that contains the Teneo Web Chat UI is 
 
 ![Teneo Web Chat loaded in iFrame](host_child.png)
 
-When implemented like this, Teneo Web Chat stores the chat history in the localStorage of Domain X. This allows it to show the same chat history on multiple domains.
-
 To transfer information from the websites to Teneo Web Chat and vice versa, the JavaScript [postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) API is used. For example, when the user clicks the launch button (which is part of the page shown inside the iFrame), a postMessage is sent from the page inside the iFrame to the parent to inform the parent that the iFrame size should be updated.
 
 ## Contents of this repository
