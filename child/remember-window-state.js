@@ -1,12 +1,12 @@
 function rememberVisibilityState(payload) {
     // store state in localStorage
-    localStorage.setItem('twc_last_state', payload.visibility);
+    sessionStorage.setItem('twc_last_state', payload.visibility);
 }
 
 function restoreWindowState() {
 
   // get window state from localStorage
-  const lastState = localStorage.getItem('twc_last_state');
+  const lastState = sessionStorage.getItem('twc_last_state');
 
   // by default keep window minimized
   if (lastState === 'maximized') {
