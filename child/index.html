@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <title>Teneo Web Chat 3.0 - Child page example</title>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0 user-scalable=no">
+
+    <!-- Some styles of the Teneo Web Chat UI need to be overriden to make sure it looks then shown in an iFrame -->
     <link href="twc-child-styles.css" type="text/css" rel="stylesheet">
   </head>
   
@@ -20,8 +22,7 @@
         ) {
           var element = document.getElementById('teneo-web-chat');
           const teneoProps = {
-            'teneoEngineUrl': 'https://as-freaky-styley-714c5e.bots.teneo.ai/teneo_web_chat_tes_3gzgctjx5q84x8fztj2bdzxtrh/', // replace with url of teneo engine
-            'showCloseButton': true,
+            'teneoEngineUrl': 'https://some.teneo/engine-instance/', // replace with url of teneo engine
           }
           window.TeneoWebChat.initialize(element,teneoProps);
         }
@@ -29,7 +30,12 @@
       }
     </script>
     <!-- Teneo Web Chat end-->
+
+    <!-- Script to remember if chat window is minimized/maximized -->
     <script src="remember-window-state.js"></script>
+
+    <!-- Script that listens to messages from the parent or sends messages to the parent -->
+    <!-- Makes sure the iframe is properly maximzed/minimized when the user opens/closes the chat window -->
     <script src="twc-child-scripts.js"></script>
   </body>
 </html>

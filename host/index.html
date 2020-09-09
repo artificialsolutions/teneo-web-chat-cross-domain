@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <title>Teneo Web Chat 3.0 - Host page example</title>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0 user-scalable=no">
+
+    <!-- Styles to properly resize the iframe when minimized/maximized -->
     <link href="twc-host-styles.css" type="text/css" rel="stylesheet">
   </head>
   <style>
@@ -15,9 +17,15 @@
   <body>
     <!-- Page content goes here -->
     <h1>Host</h1>
+
+    <!-- Example buttons to demonstrate how buttons on the host website can post messages to the iframe -->
     <p><button id="chat-btn-open">Maximize</button> - <button id="chat-btn-close">Minimize</button></p><br>
+
     <!-- Add URL to child page to frame src -->
     <iframe src="https://url/child/" id="twc-iframe"></iframe>
+
+    <!-- Script that listens to message from the iFrame or sends messages to the iFrame -->
+    <!-- Makes sure the iframe is properly maximzed/minimized when the user opens/closes the chat window -->
     <script src="twc-host-scripts.js"></script>
   </body>
 </html>
