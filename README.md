@@ -30,7 +30,7 @@ Note that you should change the url of the iframe `src` to the url of the pages 
 Contains styles to properly change the style and size of the iFrame, depending on whether the chat window is maximized or miminized.
 
 #### twc-host-scripts.js
-Script that receives postMessages from Teneo Web Chat when the chat window is maximized/minimized. Also contains code to demonstrate how postMessage can be send to the child page to tell it to maximize/minimize the chat window.
+Script that receives postMessages from Teneo Web Chat when the chat window is maximized/minimized. Also contains code to demonstrate how postMessage can be send to the child page to tell it to maximize/minimize the chat window. This code can be extended depending on requirements.
 
 ### Child folder
 The 'child' folder contains the Teneo Web Chat UI and should be hosted on a domain that can be loaded inside the iFrame (the page at Domain X in the image above). 
