@@ -4,7 +4,7 @@ This repository contains example scripts that can be used to support cross-domai
 This repository focuses on developers and requires a basic knowledge of web technologies and JavaScript. If you have any questions, don't hesitate to add a new topic on the [Teneo Developers Forum](https://community.teneo.ai/c/developement/teneo-webchat/12).
 
 ## Prerequisites
-* This setup requires Teneo Web Chat 3.0.1 or higher. 
+* This setup requires Teneo Web Chat 3.0.1 or higher. You can download the latest version here: [https://github.com/artificialsolutions/teneo-web-chat/releases](https://github.com/artificialsolutions/teneo-web-chat/releases).
 * To embed Teneo Web Chat in your site, you will need to be able to upload files to your websites and add code (including an iFrame) into the html of your sites.
 * You will need an domain to host Teneo Web Chat. The Teneo Web Chat hosted on this domain will be loaded in an iFrame on your sites.
 
