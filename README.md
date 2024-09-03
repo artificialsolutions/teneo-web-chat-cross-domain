@@ -1,4 +1,9 @@
 # Teneo Web Chat cross-domain example
+
+> [!IMPORTANT]
+> This project has been retired and archived along with teneo-web-chat  
+> If there is a need of continued use / development of this project for your own needs please feel free to fork the project - which will remain here in archived form.
+
 This repository contains example scripts that can be used to support cross-domain browsing for Teneo Web Chat. This means users can start a conversation with a bot on website hosted on domain A, move to a website hosted on domain B and continue the conversation with the bot.
 
 This repository focuses on developers and requires a basic knowledge of web technologies and JavaScript. If you have any questions, don't hesitate to add a new topic on the [Teneo Developers Forum](https://community.teneo.ai/c/developement/teneo-webchat/12).
